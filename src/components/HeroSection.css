@@ -15,12 +15,15 @@
 
 .hero-section h1{
   font-size: 5em;
-
+  
   /* Adding gradient to text */
   background: -webkit-linear-gradient(rgba(238, 238, 238, 1), rgb(77, 7, 151) );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: 1.5s ease-in-out 0s infinite alternate breathe;
+
+  position: relative;
 }
 
 /* Learning Resources */

@@ -24,6 +24,8 @@
   border: rgb(229, 177, 255) 0.5em solid;
   border: #fff 0.5em solid;
   border-radius: 100%;
+
+  animation: 5s linear 0s infinite alternate swing;
 }
 
 #about-me>p{

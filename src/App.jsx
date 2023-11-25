@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import "./components/Animations.css"
+
 // Importing Components
 import Header from './components/Header'
 import PageSection from './components/PageSection'
