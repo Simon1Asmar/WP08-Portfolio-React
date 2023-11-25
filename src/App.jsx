@@ -8,26 +8,19 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* Header (Nav bar) [Responsive for different screen sizes]*/}
+      {/* Section[hero]: welcome message or tagline + background image*/}
+      {/* Section[about]: info about me, skills and interests + (optional: add timeline of your journey) */}
+      {/* Section[projects]: at least 3 Cards (title, description, link) */}
+      {/* Contact-us form */}
+      {/* Footer: name and copyright + social media links */}
+
+      {/* 
+        THINGS TO ADD:-
+        - Social Media Icons
+          - install react icons
+        - Animations
+      */}
     </>
   )
 }
