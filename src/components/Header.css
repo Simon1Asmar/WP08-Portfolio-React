@@ -1,0 +1,39 @@
+.header{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  background-color: #111;
+
+  font-weight: bold;
+}
+
+.header>nav{
+  width: 100vw;
+  max-width: 1400px;
+
+  height: 10vh;
+  padding: 1em 2em;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type:none;
+  gap: 2rem;
+}
+
+.header-margin{
+  margin-top: 10vh;
+}
