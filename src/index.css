@@ -13,7 +13,8 @@ body {
 
   /* background-color: #535bf2; */
   /* background-color: #212; */
-  background-color:rgb(47, 158, 255);
+  /* background-color:rgb(47, 158, 255); */
+  background-color: #111;
 
   min-width: 320px;
   min-height: 100vh;

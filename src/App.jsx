@@ -3,21 +3,27 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// Importing Components
 import Header from './components/Header'
 import PageSection from './components/PageSection'
 import BackgroundImg from './components/BackgroundImg'
 import HeroSection from './components/HeroSection'
 import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
+
+import { BsGithub } from "react-icons/bs";
+import { FaStackOverflow } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <BackgroundImg/>
+    <BackgroundImg/>
       {/* Header (Nav bar) [Responsive for different screen sizes]*/}
       <Header>
-        <a href="#">TEST</a>
+        <a href="#">Simon G. Asmar</a>
         <ul>
           <li><a href="#hero-section">Home</a></li>
           <li><a href="#about-section">About</a></li>
@@ -38,9 +44,16 @@ function App() {
       </PageSection>
       {/* Contact-us form */}
       <PageSection id="contact-section">
+        <ContactForm/>
       </PageSection>
       {/* Footer: name and copyright + social media links */}
-      <Footer name="Simon Asmar" copyrightYear="2024"/>
+      <Footer name="Simon Asmar" copyrightYear="2023">
+        <p>
+          <a href="https://www.github.com/simon1asmar" target='_blank'><BsGithub/></a>
+          &nbsp;<a href="https://stackoverflow.com/users/15034649/simongasmar" target='_blank'><FaStackOverflow/></a>
+          &nbsp;<a href="https://g.dev/Simon1Asmar" target='_blank'><FaGoogle/></a>
+        </p>
+      </Footer>
 
       {/* 
         THINGS TO ADD:-
