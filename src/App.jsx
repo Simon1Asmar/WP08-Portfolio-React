@@ -19,12 +19,18 @@ import { BsGithub } from "react-icons/bs";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
+// Importing Images
+import ProfilePic from "./assets/images/ProfilePic.jpg"
+import proj2Pic from "./assets/images/farah-ar.webp"
+
 function App() {
   const [count, setCount] = useState(0)
 
   const aboutMe = {
     name:"Simon George Asmar",
     paragraph: "a passionate Unity developer and full-stack web enthusiast dedicated to bringing digital ideas to life. With a background in both 3D and 2D game development, I thrive on crafting immersive experiences that captivate audiences. From navigating virtual realities in AR and VR to creating dynamic and interactive web solutions, I merge creativity with code to build worlds of endless possibilities.",
+    skills: ["Self Learning", "Unity", "Full Stack Web Development"],
+    interests: ["Learning", "Traveling", "Watching Movies", "Games", "Music", "Reading"],
   }
 
   const projects = [
@@ -38,8 +44,7 @@ function App() {
       title: "Farah AR: Color, Play, and Learn",
       description: "An AR coloring book companion application that teaches children about child's rights, I made while working at Intertech.",
       link: "https://apps.apple.com/sa/app/%D9%84%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D8%A8-%D9%88%D8%AA%D8%B9%D9%84%D9%85/id6457362014?l=en&platform=iphone",
-      imageLink: "https://image.winudf.com/v2/image1/Y29tLmludGVydGVjaC5mYXJhaGFyX3NjcmVlbl82XzE2OTIzMDQ1NjlfMDE5/screen-6.webp?fakeurl=1&type=.webp"
-    
+      imageLink: proj2Pic,
     },
     {
       title: "Minecraft 2D",
@@ -70,7 +75,13 @@ function App() {
       </PageSection>
       {/* Section[about]: info about me, skills and interests + (optional: add timeline of your journey) */}
       <PageSection id="about-section" title="About Me">
-        <AboutMe name={aboutMe.name} paragraph={aboutMe.paragraph}/>
+        <AboutMe name={aboutMe.name} paragraph={aboutMe.paragraph} profilePic={ProfilePic} interests={aboutMe.interests} skills={aboutMe.skills}>
+        <h3>
+          <a href="https://www.github.com/simon1asmar" target='_blank'><BsGithub/></a>
+          &nbsp;<a href="https://stackoverflow.com/users/15034649/simongasmar" target='_blank'><FaStackOverflow/></a>
+          &nbsp;<a href="https://g.dev/Simon1Asmar" target='_blank'><FaGoogle/></a>
+        </h3>
+        </AboutMe>
       </PageSection>
       {/* Section[projects]: at least 3 Cards (title, description, link) */}
       <PageSection id="projects-section" title="Projects I've Worked On">
@@ -85,18 +96,13 @@ function App() {
         <ContactForm/>
       </PageSection>
       {/* Footer: name and copyright + social media links */}
-      <Footer name="Simon Asmar" copyrightYear="2023">
+      <Footer name="Simon George Asmar" copyrightYear="2023">
         <p>
           <a href="https://www.github.com/simon1asmar" target='_blank'><BsGithub/></a>
           &nbsp;<a href="https://stackoverflow.com/users/15034649/simongasmar" target='_blank'><FaStackOverflow/></a>
           &nbsp;<a href="https://g.dev/Simon1Asmar" target='_blank'><FaGoogle/></a>
         </p>
       </Footer>
-
-      {/* 
-        THINGS TO ADD:-
-        - Animations
-      */}
     </>
   )
 }
