@@ -10,13 +10,37 @@ import BackgroundImg from './components/BackgroundImg'
 import HeroSection from './components/HeroSection'
 import Footer from './components/Footer'
 import ContactForm from './components/ContactForm'
+import AboutMe from './components/AboutMe'
+import CardsContainer from './components/CardsContainer'
+import ProjectCard from './components/ProjectCard'
 
+// Importing Icons
 import { BsGithub } from "react-icons/bs";
 import { FaStackOverflow } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const aboutMe = {
+    name:"Simon George Asmar",
+    paragraph: "a passionate Unity developer and full-stack web enthusiast dedicated to bringing digital ideas to life. With a background in both 3D and 2D game development, I thrive on crafting immersive experiences that captivate audiences. From navigating virtual realities in AR and VR to creating dynamic and interactive web solutions, I merge creativity with code to build worlds of endless possibilities.",
+  }
+
+  const projects = [
+    {
+      title: "Woodlands",
+      description: "a 2D platformer game made with Unity.",
+      link: "https://simon1asmar.itch.io/woodlands",
+      imageLink: "https://img.itch.zone/aW1nLzkwMzY3NjUucG5n/315x250%23c/xHN0v%2F.png"
+    },
+    {
+      title: "Woodlands",
+      description: "a 2D platformer game made with Unity.",
+      link: "https://simon1asmar.itch.io/woodlands",
+      imageLink: "https://img.itch.zone/aW1nLzkwMzY3NjUucG5n/315x250%23c/xHN0v%2F.png"
+    },
+  ];
 
   return (
     <>
@@ -37,13 +61,19 @@ function App() {
         <HeroSection tagline="From engaging 3D and 2D video games to immersive AR/VR adventures and dynamic web solutions, welcome to my world of endless possibilities."/>
       </PageSection>
       {/* Section[about]: info about me, skills and interests + (optional: add timeline of your journey) */}
-      <PageSection id="about-section">
+      <PageSection id="about-section" title="About Me">
+        <AboutMe name={aboutMe.name} paragraph={aboutMe.paragraph}/>
       </PageSection>
       {/* Section[projects]: at least 3 Cards (title, description, link) */}
-      <PageSection id="projects-section">
+      <PageSection id="projects-section" title="Projects I've Worked On">
+        <CardsContainer>
+          {projects.map((project) => (
+            <ProjectCard title={project.title} description={project.description} imageLink={project.imageLink} link={project.link}/>
+          ))}
+        </CardsContainer>
       </PageSection>
       {/* Contact-us form */}
-      <PageSection id="contact-section">
+      <PageSection id="contact-section" title="Contact Me">
         <ContactForm/>
       </PageSection>
       {/* Footer: name and copyright + social media links */}
@@ -57,8 +87,6 @@ function App() {
 
       {/* 
         THINGS TO ADD:-
-        - Social Media Icons
-          - install react icons -v
         - Animations
       */}
     </>

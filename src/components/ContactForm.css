@@ -34,14 +34,32 @@
 
 }
 
-.form-container>h1{
+/* .form-container>h1{
   font-size: 2em;
 
   color: white;
 
+
+  color: rgb(208, 143, 255);
+  border-color: rgb(208, 143, 255);
   
-}
+} */
 
 textarea{
   resize: none;
+}
+
+.form-container form>input:hover,
+.form-container form>textarea:hover,
+.form-container form>button:hover{
+  color: rgb(208, 143, 255);
+  border-color: rgb(208, 143, 255);
+}
+
+.form-container form>input:focus,
+.form-container form>textarea:focus{
+  outline: none;
+  
+  color: rgb(195, 110, 255);
+  border-color: rgb(195, 110, 255);
 }

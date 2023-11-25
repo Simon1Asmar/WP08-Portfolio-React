@@ -8,7 +8,7 @@ import { RiSendPlane2Fill } from "react-icons/ri";
 function ContactForm() {
   return (
     <section className='form-container'>
-      <h1>Contact Me</h1>
+      {/* <h1>Contact Me</h1> */}
       <form>
         <input type="email" name="email" id="email" placeholder='Email' required/>
         <input type="text" name="name" id="name" placeholder='Name' required/>
