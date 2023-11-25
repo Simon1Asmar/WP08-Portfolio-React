@@ -35,10 +35,18 @@ function App() {
       imageLink: "https://img.itch.zone/aW1nLzkwMzY3NjUucG5n/315x250%23c/xHN0v%2F.png"
     },
     {
-      title: "Woodlands",
-      description: "a 2D platformer game made with Unity.",
-      link: "https://simon1asmar.itch.io/woodlands",
-      imageLink: "https://img.itch.zone/aW1nLzkwMzY3NjUucG5n/315x250%23c/xHN0v%2F.png"
+      title: "Farah AR: Color, Play, and Learn",
+      description: "An AR coloring book companion application that teaches children about child's rights, I made while working at Intertech.",
+      link: "https://apps.apple.com/sa/app/%D9%84%D9%88%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D8%A8-%D9%88%D8%AA%D8%B9%D9%84%D9%85/id6457362014?l=en&platform=iphone",
+      imageLink: "https://image.winudf.com/v2/image1/Y29tLmludGVydGVjaC5mYXJhaGFyX3NjcmVlbl82XzE2OTIzMDQ1NjlfMDE5/screen-6.webp?fakeurl=1&type=.webp"
+    
+    },
+    {
+      title: "Minecraft 2D",
+      description: "Appleseeds Full Stack Course Weekend Project.",
+      link: "https://exquisite-profiterole-c8d1bd.netlify.app/",
+      imageLink: "https://wholesgame.com/wp-content/uploads/Minecraft-wallpaper.jpg"
+    
     },
   ];
 

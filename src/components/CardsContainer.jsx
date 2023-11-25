@@ -1,7 +1,6 @@
 import React from 'react'
 
 import './CardsContainer.css'
-// import ProjectCard from './ProjectCard'
 
 function CardsContainer(props) {
   return (

@@ -13,6 +13,8 @@
   justify-content: center;
 
   cursor: pointer;
+
+  flex: 5;
 }
 
 .project-card:hover{
@@ -22,5 +24,9 @@
 
 .project-card img{
   width: 170px;
+  height: 120px;
   border-radius: 15px;
+
+  object-fit: cover;
+  object-position: center;
 }
